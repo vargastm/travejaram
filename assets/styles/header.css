@@ -43,9 +43,8 @@ nav ul li:last-child img {
  #profile p {
   max-width: 385px;
   font: var(--text-md);
+  margin-right: 35px;
 }
-
-
 
 #profile img {
   max-width: 175px;
@@ -68,4 +67,24 @@ nav ul li:last-child img {
 
 #info span {
   font: var(--text-md);
+}
+
+
+@media (max-width: 480px) {
+  #profile-info .container, #profile {
+    flex-direction: column;
+  }
+
+  #profile p {
+    margin: 0 0 20px;
+  }
+
+  #info {
+    gap: 12px;
+    width: 100%;
+  }
+
+  .desktop {
+    display: none;
+  }
 }
