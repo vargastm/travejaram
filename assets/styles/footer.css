@@ -1,0 +1,25 @@
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding-block: 25px;
+}
+
+footer div {
+  display: flex;
+  gap: 16px;
+}
+
+footer span, footer a {
+  font: var(--text-md);
+}
+
+@media (max-width:480px) {
+  footer {
+    flex-direction: column;
+  }
+
+  footer div {
+    margin-top: 16px;
+    flex-direction: column;
+  }
+}
